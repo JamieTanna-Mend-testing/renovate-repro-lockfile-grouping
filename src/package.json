@@ -1,0 +1,22 @@
+{
+  "name": "testing-app",
+  "version": "1.0.0",
+  "description": "Testing app for Renovate repro",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "engines": {
+    "node": "^20.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  },
+  "dependencies": {
+    "cookie": "^1.0.0",
+    "uuid": "^11.0.0"
+  }
+}
