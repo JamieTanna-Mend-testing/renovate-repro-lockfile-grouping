@@ -3,29 +3,28 @@
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": [
-      "every weekday"
+      "at any time"
     ]
   },
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
-  "schedule": [
-      "every weekday"
-  ],
   "branchPrefix": "renovate-",
   "packageRules": [
     {
-      "matchUpdateTypes": ["major", "minor"],
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
       "enabled": false
     },
     {
-      "matchManagers": ["terraform"],
-      "matchUpdateTypes": ["lockFileMaintenance"],
+      "matchManagers": [
+        "terraform"
+      ],
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
       "groupName": "Terraform lockfile maintenance"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["lockFileMaintenance", "patch"],
-      "groupName": "normal and lockfile dep"
     }
   ]
 }
